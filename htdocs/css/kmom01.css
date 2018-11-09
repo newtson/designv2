@@ -4,6 +4,210 @@
  * This stylesheet is for the design course and kmom01. Fill it with style
  * to style up the website so it is useable.
  */
+ @import url('https://fonts.googleapis.com/css?family=Mali');
+
+html {
+    width: 100%;
+}
+
+/* flash bilden */
+.region-flash {
+    margin: 0 auto;
+    margin-left: 15%;
+    margin-top: -13%;
+    margin-bottom: 5%;
+    z-index: 1;
+}
+
+h1 {
+    background-color: rgba(238, 223, 204, 0.5);
+    padding: 0.3em;
+    width: 95%;
+    margin-bottom: 3%;
+}
+
+h1, h2, h3, h4, a, li {
+	font-family: 'Mali', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+
+.region-header {
+    text-align: left;
+    display: inline-flex;
+    clear: both;
+    line-height: 2em;
+    margin-bottom: 10%;
+}
+
+.region-header img {
+    max-width: 30%;
+}
+
+/* löv och design, skapar bold på design ordet  */
+.region-header-col-1 {
+    margin-left: 11%;
+    margin-top: -4%;
+    text-align: right;
+    font-weight: bold;
+    z-index: 10;
+    max-height: 70px;
+    max-width: 80%;
+}
+
+/* ändrar ordet design i header */
+.region-header-col-1 a {
+    color: #cdc5bf;
+    font-size: 2em;
+}
+
+/*  zindexet ser till att navbaren är klickabar fast lövet är över den */
+.region-header-col-2 {
+    z-index: 20;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* main navbar */
+.region-header-col-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: left;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    clear: both;
+    margin-bottom: 4%;
+}
+
+p {
+    font-size: 1.1em;
+    font-family: 'Mali', cursive;
+}
+
+main p {
+    margin-right: 5%;
+    font-size: 1.2em;
+}
+
+.region-main {
+    line-height: 1.4em;
+}
+
+/* är navbar på redovisningarna */
+.region-sidebar-left {
+    max-width: 280px;
+}
+
+/* är också del av navbar redovisningar*/
+.toc {
+    width: 90%;
+}
+
+.breadcrumb-list {
+    max-width: 280px;
+}
+
+.stylechooser {
+    max-width: 80%;
+}
+
+.stylechooser p {
+    float: left;
+}
+
+.stylechooser table {
+    margin-top: 25%;
+}
+
+/*lagt till själv*/
+.stylechooserP {
+    float: left;
+}
+
+/* till sidebar i om sidan */
+.region-sidebar-right {
+    max-width: 300px;
+    float: right;
+    margin-top: -33%;
+}
+
+.region-sidebar-right a {
+    font-size: 1em;
+    text-decoration: underline;
+    color: blue;
+}
+.region-sidebar-right h4 {
+    max-width: 95%;
+    background-color: #cdc0b0;
+}
+
+/* next och previous vid redovisnings delen */
+.next {
+    float: right;
+}
+
+/* footer delen */
+.region-footer {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* column i footer */
+.footer-column {
+    max-width: 350px;
+    padding: 1%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    float: left;
+}
+
+/* visar vilken stylesheet som används */
+.region-flash-message {
+	width: 700px;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* hela footer section,  child element till region-footer */
+.site-footer {
+    max-width: 100%;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-column h4 {
+    border-bottom: 1px solid black;
+}
+
+/* till byline */
+.bylineImage {
+	margin-left: 85%;
+}
+
+.region-after-main {
+    max-width: 800px;
+    max-height: 150px;
+    margin: 0 auto;
+    padding-left: 1%;
+    padding-right: 0.5%;
+    font-size: 0.9em;
+    color: grey;
+    border: 5px double grey;
+    text-align: left;    
+    display: block;
+}
 
 /* Hide submenu, leave this to kmom02 */
 .rm-desktop ul {

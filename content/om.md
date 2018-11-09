@@ -4,7 +4,7 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-kursrepo
 
@@ -12,17 +12,19 @@ views:
         region: sidebar-right
         template: anax/v2/block/default
         data:
-            meta: 
+            meta:
                 type: single
                 route: block/om-redovisa
+
+    flash:
+        region: flash
+        template: anax/v2/image/default
+        data:
+            src: "image/theme/flash.jpg?width=1100&height=150&crop-to-fit&area=30,0,0,0"
 ---
 Om
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/om.md`.
+Detta tillhör kursen 'Teknisk webbdesign och användarbarhet' som går på Blekinge Tekniska Högskola höstterminen 2018.
 
-Skriv några kloka ord om kursen?
-
-Lägg till en representativ bild för kursen, enligt ditt egna val.
-
-[FIGURE src=image/car.png?w=300 caption="En fin bil som demobild."]
+[FIGURE src=image/bicycle.png?w=300 caption=""]

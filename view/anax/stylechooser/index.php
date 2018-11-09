@@ -12,7 +12,7 @@ namespace Anax\View;
 
 
 ?><h1>Stylechooser</h1>
-<p>Here you can select among the available styles and activate them.</p>
+<p class="stylechooserP">Here you can select among the available styles and activate them.</p>
 <form class="stylechooser" method="post" action="<?= url("style/update") ?>">
     <fieldset>
         <legend>Stylechooser</legend>
