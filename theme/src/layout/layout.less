@@ -1,0 +1,87 @@
+/**
+ * general layout
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
+/* h1 */
+@colorBackH1: rgba(238, 223, 204, 0.5);
+
+/* links in general */
+@colorLink: black;
+
+
+p {
+    font-size: 1.1em;
+    font-family: 'Mali', cursive;
+}
+
+h1 {
+    background-color: @colorBackH1;
+    padding: 0.3em;
+    width: 95%;
+    margin-bottom: 3%;
+}
+
+h1, h2, h3, h4, a, li {
+	font-family: 'Mali', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: @colorLink;
+    font-size: 1.3em;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.breadcrumb-list {
+    max-width: 280px;
+}
+
+.stylechooser {
+    max-width: 100%;
+    overflow: auto;
+    float: left;
+}
+
+.stylechooser label {
+    max-width: 90%;
+}
+
+.stylechooser select {
+    max-width: 90%;
+}
+
+.stylechooser p {
+    float: left;
+}
+
+.stylechooser table {
+    margin-top: 20%;
+}
+
+/*lagt till själv*/
+.stylechooserP {
+    float: left;
+}
+
+/* visar vilken stylesheet som används */
+.region-flash-message {
+	max-width: 100%;
+	text-align: center;
+	font-weight: bold;
+    float: left;
+}
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}

@@ -1,3 +1,3 @@
-#### Footer col 1
+#### Kursen
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Denna sida är en uppgift till kursen [Teknisk webbdesign och användarbarhet](https://dbwebb.se/kurser/design)

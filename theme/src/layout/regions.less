@@ -1,0 +1,81 @@
+/**
+* body of the site
+*/
+
+@colorBacksideh4: #cdc0b0;
+@colorBlue: blue;
+@border5grey: 5px double grey;
+@colorGrey: grey;
+
+.widFloat(@wid) {
+    max-width: @wid;
+    float: left;
+}
+
+main {
+    .widFloat(50%);
+    margin: 0 auto;
+    margin-bottom: 4%;
+    overflow: auto;
+}
+
+main p {
+    margin-right: 5%;
+    font-size: 1.2em;
+}
+
+.region-main {
+    line-height: 1.4em;
+    overflow: auto;
+    margin-left: 15%;
+}
+
+/* är navbar på redovisningarna */
+.region-sidebar-left {
+    .widFloat(280px);
+}
+
+/* är också del av navbar redovisningar*/
+.toc {
+    width: 90%;
+}
+
+/* till sidebar i om sidan */
+.region-sidebar-right {
+    .widFloat(300px);
+}
+
+.region-sidebar-right a {
+    font-size: 1em;
+    text-decoration: underline;
+    color: @colorBlue;
+}
+.region-sidebar-right h4 {
+    max-width: 95%;
+    background-color:@colorBacksideh4;
+}
+
+/* next och previous vid redovisnings delen */
+.next {
+    float: right;
+}
+
+/* till byline */
+.bylineImage {
+	margin-left: 85%;
+}
+
+.region-after-main {
+    .widFloat(800px);
+    max-height: 150px;
+    margin: 0 auto;
+    padding-left: 1%;
+    padding-right: 0.5%;
+    font-size: 0.9em;
+    color: @colorGrey;
+    border: @border5grey;
+    text-align: left;
+    display: block;
+    margin-left: 15%;
+    overflow: hidden;
+}

@@ -1,3 +1,3 @@
-#### Footer col 3
+#### Välj din stil
 
-Med brödtext i ett stycke som säger något trevligt om just detta block, eller kanske en lista av länkar.
+Om du vill ändra sidans layout kan du gå till menyvalet Styleväljare och testa de olika alternativen som finns där.
