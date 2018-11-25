@@ -21,7 +21,8 @@ return [
                 // Change here to set another default stylesheet
                 //"css/dbwebb-se.min.css",
                 //"css/kmom01.css",
-                "css/kmom02.css",
+                //"css/kmom02.css",
+                "css/kmom03.css",
             ],
             "javascripts" => [
                 "js/responsive-menu.js",
@@ -31,7 +32,7 @@ return [
 
     // These views are always loaded into the collection of views.
     "views" => [
-        [
+        /*[
             "region" => "header-col-1",
             "template" => "anax/v2/header/site_logo",
             "data" => [
@@ -39,7 +40,7 @@ return [
                 "siteLogo"      => "image/theme/leaf_256x256.png",
                 "siteLogoAlt"   => "Löv",
             ],
-        ],
+        ],*/
         [
             "region" => "header-col-1",
             "template" => "anax/v2/header/site_logo_text",
