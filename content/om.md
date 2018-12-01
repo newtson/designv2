@@ -27,4 +27,4 @@ Om
 
 Detta tillhör kursen 'Teknisk webbdesign och användarbarhet' som går på Blekinge Tekniska Högskola höstterminen 2018.
 
-[FIGURE src=image/bicycle.png?w=300 caption=""]
+[FIGURE src=image/bicycle.png?w=300 class="omPic" caption=""]

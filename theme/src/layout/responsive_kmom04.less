@@ -1,0 +1,118 @@
+/**
+* responsive
+*/
+
+@media screen and (max-width: 1200px) {
+
+    /* main navbar */
+    .region-header-col-2 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .region-main {
+        // till 1 kolumns layout
+        #desinax-vgrid.column(@columns);
+
+        // if both left and right sidebar exists
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left {
+        // til tre kolumn layout
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-main img {
+        max-width: 80%;
+    }
+
+    /* main navbar */
+    .region-header-col-2 {
+        display: none;
+    }
+
+    /* show hamburgermeny */
+    .rm-desktop ul {
+        display: block;
+    }
+
+    /* show responsive/mobile menu */
+    .rm-navbar-max {
+        display: block;
+    }
+
+    .footer-column {
+        #desinax-vgrid.column(@columns);
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    .region-main.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    h4 {
+        font-size: 17px;
+    }
+
+
+    .region-footer p {
+        font-size: 14px;
+    }
+
+    .region-footer h4 {
+        font-size: 16px;
+    }
+
+    .region-main img {
+        max-width: 70%;
+    }
+
+    .bylineImage {
+    	max-width: 80%;
+    }
+
+    /* main navbar */
+    .region-header-col-2 {
+        display: none;
+    }
+
+    /* show hamburgermeny */
+    .rm-desktop ul {
+        display: block;
+    }
+
+    /* show responsive/mobile menu */
+    .rm-navbar-max {
+        display: block;
+    }
+
+    .footer-column {
+        #desinax-vgrid.column(@columns);
+    }
+}

@@ -1,0 +1,124 @@
+@import "kmom04.less";
+@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky');
+@import url('https://fonts.googleapis.com/css?family=Crafty+Girls');
+
+@fontMain: 'Fontdiner Swanky';
+@fontHF: 'Crafty Girls';
+@redish: #faa6a8;
+@yellowish: #fde6a8;
+@greenish: #8bcd88;
+@blueish:  #7c80af;
+
+body {
+    font-family: @fontMain, cursive;
+}
+
+h1 {
+    font-family: @fontHF, cursive;
+}
+ h4 {
+    font-family: @fontHF, cursive;
+ }
+
+.region-header-col-1:hover {
+    background-color: @redish;
+}
+
+.region-header-col-2:hover {
+    background-color: @yellowish;
+}
+
+.region-header-col-3:hover {
+    background-color: @blueish;
+}
+
+.region-sidebar-left:hover {
+    background-color: @yellowish;
+    font-family: @fontHF, cursive;
+}
+
+.region-sidebar-right:hover {
+    background-image: repeating-linear-gradient(#fde6a8, #7c80af 10%, #faa6a8 20%);
+    font-family: @fontHF, cursive;
+}
+
+.outer-wrap-flash:hover {
+    background-color: @greenish;
+}
+
+.region-main:hover {
+        font-family: @fontHF, cursive;
+        background-image: radial-gradient(circle, #7c80af 80%, white 20%);
+    &.has-sidebar-right {
+        background-image: radial-gradient(circle, #8bcd88 80%, white 20%);
+    }
+    &.has-sidebar-left {
+        background-image: radial-gradient(circle, #faa6a8 80%, white 20%);
+    }
+}
+
+.outer-wrap-footer:hover {
+    background-color: @redish;
+}
+
+.outer-wrap-breadcrumb:hover {
+    background-color: @blueish;
+}
+
+.region-after-main {
+    border: 1px solid black;
+}
+
+.region-after-main:hover {
+    border: 5px solid @greenish;
+}
+
+// change location of picture in byline
+.region-after-main img:hover {
+    animation-name: move;
+    animation-duration: 3s;
+}
+
+@keyframes move {
+    0% {
+        -webkit-transform:rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+         transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform:rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+         transform: rotate(90deg);
+    }
+    100% {
+        -webkit-transform:rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+         transform: rotate(90deg);
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    /* flash bilden */
+    .region-flash {
+        #desinax-vgrid.column(@columns);
+    }
+
+    /* flash bilden */
+    .region-flash img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* flash bilden */
+    .region-flash img {
+        display: none;
+    }
+}

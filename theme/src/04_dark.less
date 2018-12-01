@@ -1,0 +1,40 @@
+@import "kmom04.less";
+@import url('https://fonts.googleapis.com/css?family=Lora');
+@import url('https://fonts.googleapis.com/css?family=Unlock');
+
+@fontBase: 'Lora';
+@fonth1: 'Unlock';
+@backgroundColor: #302124;
+@textColor: #c76174;
+@border: 1px solid black;
+
+body {
+    font-family: @fontBase, serif;
+    background-color: @backgroundColor;
+    color: @textColor;
+}
+
+h1 {
+    font-family: @fonth1, cursive;
+}
+
+// byline delen
+.region-after-main {
+    border: @border;
+}
+
+.region-flash img {
+    display: none;
+}
+
+.region-sidebar-left {
+    color: @textColor;
+}
+
+.region-sidebar-right {
+    color: @textColor;
+}
+
+a {
+    color: @textColor;
+}

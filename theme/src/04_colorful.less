@@ -1,0 +1,81 @@
+@import "kmom04.less";
+@import url('https://fonts.googleapis.com/css?family=Gabriela');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+@fontHF: 'Cinzel Decorative';
+@fontMain: 'Fredericka the Great';
+
+@cyan: #00ffff;
+@yellow: #ffff00;
+@fuchsia: #ff00ff;
+@borderB: 5px double @cyan;
+
+
+body {
+    font-family: @fontHF, cursive;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: @fontMain, cursive;
+    text-align: center;
+    color: @fuchsia;
+}
+
+.inner-wrap-header {
+    border-bottom: @borderB;
+}
+
+.footer-column {
+    font-size: 0.8em;
+}
+
+.inner-wrap-main {
+    border: 5px double @cyan;
+    background-color: @fuchsia;
+}
+
+main {
+    background-color: @yellow;
+    font-family: @fontMain, cursive;
+}
+
+.outer-wrap-flash {
+    background-color: @fuchsia;
+}
+
+h4 {
+    font-family: @fontMain, cursive;
+}
+
+.region-sidebar-left {
+    font-family: @fontMain, cursive;
+    background-color: @cyan;
+    font-size: 0.9em;
+}
+
+.region-sidebar-right {
+    font-family: @fontMain, cursive;
+    background-color: @cyan;
+    font-size: 0.9em;
+}
+
+
+@media screen and (max-width: 1000px) {
+    /* flash bilden */
+    .region-flash {
+        #desinax-vgrid.column(@columns);
+    }
+
+    /* flash bilden */
+    .region-flash img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    /* flash bilden */
+    .region-flash img {
+        display: none;
+    }
+}
