@@ -4598,7 +4598,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   font-family: 'Mali';
   font-style: normal;
   font-weight: 400;
-  src: local('Mali Regular'), local('Mali-Regular'), url(https://fonts.gstatic.com/s/mali/v1/N0ba2SRONuN4SC3ECg.ttf) format('truetype');
+  src: local('Mali Regular'), local('Mali-Regular'), url(https://fonts.gstatic.com/s/mali/v2/N0ba2SRONuN4SC3ECg.ttf) format('truetype');
 }
 html {
   overflow-y: scroll;

@@ -1,0 +1,164 @@
+@import "kmom06.less";
+@import url('https://fonts.googleapis.com/css?family=Merienda');
+
+
+body {
+    font-family: 'Merienda', cursive;
+    background-image: url("../image/polkadots.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrap-all {
+    background-color: rgba(255, 255, 255, .45);
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+main img {
+    float: right;
+    border-bottom: 2px solid rgb(220,20,60);
+}
+
+main img:hover {
+    animation-name: cycle;
+    animation-duration: 6s;
+}
+
+.outer-wrap-header {
+    background-image: url("../image/wave.jpg");
+    background-repeat: repeat;
+}
+
+.region-header-col-1 a {
+    color: rgb(220,20,60);
+}
+
+.region-header-col-2,
+.region-header-col-3 {
+    color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.region-flash {
+    display: none;
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+}
+
+.region-sidebar-left h4,
+.region-sidebar-right h4 {
+    color: rgb(220,20,60);
+}
+
+.region-sidebar-left h4:hover {
+    animation-name: right;
+    animation-duration: 4s;
+}
+
+.region-sidebar-right h4:hover {
+    animation-name: right;
+    animation-duration: 4s;
+}
+
+.region-after-main {
+    max-width: 30%;
+    border: 1px solid rgb(220,20,60);
+    background-color: rgba(255, 255, 255, 0.8);
+    float: right;
+}
+
+.region-after-main img:hover {
+    animation-name: turn;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+}
+
+h1 {
+    color: rgb(220,20,60);
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+h1:hover {
+    animation-name: changing;
+    animation-duration: 3s;
+}
+
+h4 {
+    color: white;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+@keyframes changing {
+    0% {color:  rgb(220,20,60)}
+    5% {color: #ff0000 }
+    10% {color: #ffa07a}
+    15% {color: #f00000}
+    20% {color: rgb(220,20,60)}
+    25% {color: #ff0000 }
+    30% {color: #ffa07a}
+    35% {color: #f00000}
+    40% {color: rgb(220,20,60)}
+    45% {color: #ff0000 }
+    50% {color: #ffa07a}
+    55% {color: #f00000}
+    60% {color: rgb(220,20,60)}
+    65% {color: #ff0000 }
+    70% {color: #ffa07a}
+    75% {color: #f00000}
+    80% {color: rgb(220,20,60)}
+    85% {color: #ff0000 }
+    90% {color: #ffa07a}
+    95% {color: #f00000}
+    100% {color: rgb(220,20,60)}
+}
+
+@keyframes turn {
+    0% {transform: rotateY(0deg)}
+    10% {transform: rotateY(45deg)}
+    20% {transform: rotateY(80deg)}
+    30% {transform: rotateY(120deg)}
+    40% {transform: rotateY(160deg)}
+    50% {transform: rotateY(180deg)}
+    60% {transform: rotateY(200deg)}
+    70% {transform: rotateY(240deg)}
+    80% {transform: rotateY(280deg)}
+    90% {transform: rotateY(320deg)}
+    100% {transform: rotateY(360deg)}
+}
+
+@keyframes cycle {
+    0% {margin-right: 0}
+    50% {margin-right: 20em}
+    100% {margin-right: 0}
+}
+
+@keyframes right {
+    0% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: 3em;
+    }
+    100% {
+        margin-left: 0;
+    }
+}

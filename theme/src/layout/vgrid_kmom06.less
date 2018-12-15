@@ -1,0 +1,148 @@
+/**
+* vgrid layout
+*/
+
+.row {
+    #desinax-vgrid.row();
+    margin-bottom: 12px;
+}
+
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(1200px);
+}
+
+// testar flash bilden
+.region-flash {
+    #desinax-vgrid.grid(@columns);
+    margin-bottom: @magicNumber * 1;
+}
+
+// testar byline delen
+.region-after-main {
+    #desinax-vgrid.grid(1100px);
+    text-align: center;
+    margin-bottom: @magicNumber * 2;
+}
+
+// change location of picture in byline
+.region-after-main img {
+    margin-left: 85%;
+}
+
+.inner-wrap-header,
+.inner-wrap-footer {
+    #desinax-vgrid.grid(100%);
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    #desinax-vgrid.column(5);
+}
+
+.region-header-col-1 a {
+    text-decoration: none;
+    //color: black;
+}
+
+.columns-above a {
+    text-decoration: none;
+    color: black;
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(14);
+    text-align: center;
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+    //#desinax-vgrid.column(100%);
+    margin-bottom: @magicNumber * 1;
+}
+
+.outer-wrap-breadcrumb {
+    //#desinax-vgrid.column(100%);
+}
+
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    margin-bottom: @magicNumber * 3;
+
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+    }
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+    &.has-sidebar-left.has-sidebar-right {
+        // till tre kolumn layout
+        #desinax-vgrid.column(@columns - 10);
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(@columns * 1 / 4);
+    margin-bottom: @magicNumber * 3;
+}
+
+.region-sidebar-left a {
+    text-decoration: none;
+    color: black;
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+    font-size: 16px;
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    // til tre kolumn layout
+    #desinax-vgrid.column(@columns * 1 / 4 - 1);
+}
+
+/* next och previous vid redovisnings delen */
+.next {
+    float: right;
+}
+
+.region-footer {
+    #desinax-vgrid.grid(1200px);
+}
+
+.region-footer p {
+    font-size: 16px;
+}
+
+.region-footer h4 {
+    font-size: 18px;
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+}
+
+/* Hide hamburgermeny */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu */
+.rm-navbar-max {
+    display: none;
+}
